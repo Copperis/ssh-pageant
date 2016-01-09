@@ -34,7 +34,7 @@ $(PROGRAM): $(OBJS)
 	$(CC) $(LDFLAGS) $(LOADLIBES) $^ $(LDLIBS) -o $@
 
 CC = gcc
-CFLAGS = -O2 -Werror -Wall -Wextra -MMD
+CFLAGS = -O2 -Werror -Wall -Wextra -MMD -m64
 
 CSCOPE = $(firstword $(shell which cscope mlcscope 2>/dev/null) false)
 cscope: cscope.out
